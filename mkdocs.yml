@@ -1,0 +1,32 @@
+site_name: OpenClaw Research
+site_description: Research reports and analysis
+site_url: https://austinmyc.github.io/openclaw_research
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+docs_dir: reports
+repo_url: https://github.com/austinmyc/openclaw_research
+edit_uri: edit/main/reports/
+
+# Nav is built from reports/.nav.yml by awesome-nav (index + all reports)
+
+plugins:
+  - search
+  - gen-files:
+      scripts:
+        - scripts/gen_index.py
+  - awesome-nav

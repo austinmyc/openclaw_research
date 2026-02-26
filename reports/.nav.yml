@@ -1,0 +1,8 @@
+# Dynamic nav: index first, then all other .md files (newest first by filename)
+nav:
+  - index.md
+  - glob: "*.md"
+    sort:
+      by: filename
+      direction: desc
+      type: natural
